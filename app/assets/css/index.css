@@ -74,7 +74,8 @@ nav .navbar-nav a .glyphicon-envelope {color: #e05944;}
 nav .navbar-nav a .fa-car {color: #529ba8;}
 nav .navbar-nav a .glyphicon-heart {color: #e05944;}
 nav .navbar-nav a .fa-hand-paper-o {color: #529ba8;}
-nav .navbar-nav a .glyphicon-usd {color: #e05944;}
+/*nav .navbar-nav a .glyphicon-usd {color: #e05944;}*/
+nav .navbar-nav a .fa-sun-o {color: #e05944;}
 
 nav .dropdown-menu {
   background: #399eaa;
@@ -653,7 +654,7 @@ nav .dropdown-menu li.divider{
   margin-top:170px !important;
   margin-left: 5% !important;
 }
-.organization .nav-tabs {
+.organization .nav-tabs, .places .nav-tabs {
   margin-left: auto;
   margin-right: auto;
   font-size: 18px;
@@ -661,19 +662,19 @@ nav .dropdown-menu li.divider{
   background: white;
   font-weight: bold;
 }
-.organization .nav-tabs li {
+.organization .nav-tabs li, .places .nav-tabs li {
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 25px;
 }
-.organization .container {
+.organization .container, .faces .container {
   border-radius: 5px;
 }
-.organization .container section {
+.organization .container section, .faces .container section {
   background:white;
   margin-bottom:50px;
 }
-.organization .section-container {
+.organization .section-container, .faces .section-container {
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   background: #399eaa24 !important;
@@ -1461,6 +1462,27 @@ form textarea.form-control {font-size:25px}
 .member-app #pdfVersion, .volunteer-app #pdfVersion {
   font-size: 12px !important;
 } 
+
+.places #first-hero-places {
+  background-image: url('../images/dark/lets_go_places.jpg');
+  background-attachment: fixed;
+  background-position: right top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 400px;
+}
+
+.places #first-hero-places h1 {
+  color:white;
+  text-shadow: 2px 2px #529ba8;
+  margin-top:170px;
+  margin-left: 5%;
+}
+.places .jumbotron {background:white}
+.places .jumbotron p {margin-top:25px}
+.places ul li {margin-top:15px}
+
+
     
 #footer {
     width:100%;
