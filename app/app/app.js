@@ -221,7 +221,8 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
   
   //use this function instead of ng-href as ng-href is not compatible with html5mode
   $scope.redirectToURL = function(url){
-    $window.location.href = url;    
+    // $window.location.href = url;    
+    $window.open(url, '_blank');
   }
   
   $scope.scrollTo = function(id) {
