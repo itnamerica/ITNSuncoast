@@ -695,12 +695,12 @@ nav .dropdown-menu li.divider{
   margin: 25px auto 25px auto;
 }
 
-#board h1, .org-section h1, #staff h1 {
+#board h1, .org-section h1, #staff h1, #advisory h1 {
   text-align:center;
   padding: 20px;
   color:#399eaa;
 }
-#board .row, #staff .row {
+#board .row, #staff .row, #advisory .row {
   text-align: center;
   margin-top: 100px;
 }
