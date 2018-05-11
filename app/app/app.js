@@ -111,6 +111,18 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         url: '/places',
         templateUrl: viewsPath + 'places.html'
       })
+      .state('program-details', {
+        url: '/program-details',
+        templateUrl: viewsPath + 'program-details.html'
+      })
+      .state('sarasota', {
+        url: '/sarasota',
+        templateUrl: viewsPath + 'sarasota.html'
+      })
+      .state('venice', {
+        url: '/venice',
+        templateUrl: viewsPath + 'venice.html'
+      })
       .state('help-on-wheels', {
         url: '/help-on-wheels',
         templateUrl: viewsPath + 'help-on-wheels.html'
@@ -211,7 +223,12 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
     {name: 'Member Programs', state: 'member-programs', url: $scope.viewsPath + '/member-programs.html'},
     {name: 'Pay Online', state: 'pay-online', url: $scope.viewsPath + '/pay-online.html'},
     {name: 'Donate', state: 'donate', url: $scope.viewsPath + '/donate.html'},
-    {name: 'Corporate Partnership', state: 'corporate', url: $scope.viewsPath + '/corporate.html'}
+    {name: 'Corporate Partnership', state: 'corporate', url: $scope.viewsPath + '/corporate.html'},
+    {name: 'Help On Wheels', state: 'help-on-wheels', url: $scope.viewsPath + '/help-on-wheels.html'},
+    {name: 'Lets go Places', state: 'places', url: $scope.viewsPath + '/places.html'},
+    {name: 'Program Details', state: 'program-details', url: $scope.viewsPath + '/program-details.html'},
+    {name: 'Sarasota Activities', state: 'sarasota', url: $scope.viewsPath + '/sarasota.html'},
+    {name: 'Venice Activities', state: 'venice', url: $scope.viewsPath + '/venice.html'},
   ];
   
 

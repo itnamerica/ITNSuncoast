@@ -145,13 +145,18 @@
               </a>
             </li>
             
-            <li>
-              <a ui-sref="places"><span class="fa fa-sun-o"></span> 
+            <li class="dropdown">
+              <a ui-sref="places" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <span class="fa fa-sun-o"></span> 
                 LET'S GO PLACES
-              </a>
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a ui-sref="program-details">Program Details</a></li>
+                <li><a ui-sref="sarasota">Sarasota Activities</a></li>
+                <li><a ui-sref="venice">Venice Activities</a></li>
+              </ul>
             </li>
-          
-            
+
           </ul>
         </div>
         <!-- /.navbar-collapse -->
