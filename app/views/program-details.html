@@ -5,34 +5,25 @@
   
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" ng-click="scrollTo('program')">Program Details</a>
+      <a class="nav-link" ui-sref="places">Intro</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" ng-click="scrollTo('sarasota')">Sarasota Activities</a>
+      <a class="nav-link" ui-sref="sarasota">Sarasota Activities</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link disabled" ng-click="scrollTo('venice')">Venice Activities</a>
+      <a class="nav-link" ui-sref="venice">Venice Activities</a>
     </li>
   </ul>
   
   <div class="section-container mt-100">
     <div class="container itn-green-bg">
-    <div class="jumbotron section container">
-      <h2>Introducing <em>Let’s Go Places!</em></h2>
-      
-      <p>Staying engaged and connected is an important part of staying healthy! ITNSunCoast is introducing <strong><em>Let’s Go Places!</em></strong> so you can get out to do the things you need and want to do while enjoying our beautiful area and all it has to offer.</p>
-
-      <p><strong><em>Let’s Go Places!</em></strong> provides an exciting monthly calendar of events - going to the theater, art openings movies and other cultural events; shopping for necessities and fun; eating out at local restaurants; attending community events; and going to local attractions. You will be picked up at your home, share the ride with a few others, go to the specified destination, and be given a ride home at the time set on the schedule. And, if there is a specific place you would like to go, please let us know!</p>
-
-      <p>Door-to-door, round-trip rides to scheduled events will cost $15 with some noted exceptions. As an added benefit, we are negotiating discounts for Let’s Go Places! participants at local businesses to get you real bargains and keep the cost of getting out affordable.</p>
-
-      <p>You are the first in the country to try <strong><em>Let’s Go Places!</em></strong> We are piloting the program in Sarasota and Venice in June and will expand to other parts of our service area in the near future.</p>
-
-      <p><strong><em>Let’s Go Places!</em></strong> together. This service is open to anyone age 60+. ITNSunCoast membership is not required. For more information, please call us at (941) 364-7530.</p>
-    </div>
+  
     
     <div class="jumbotron section container mt-50" id="program">
-      <h2>Program Details</h2>
+      <div class="itn-title">
+        <h2>Let's Go Places</h2>
+        <hr align="left" width="35%">
+      </div>
       <h3>Let's Go Places! gives seniors access to numerous activities monthly.</h3>
       <h3>What You Need To Know:</h3>
 
@@ -61,58 +52,13 @@
       
     </div>
     
-    <div class="jumbotron section container mt-50" id="sarasota">
-      <h2 class="ta-center">Sarasota Calendar & Activities</h2>
-      <a ng-click="redirectToURL(assetsPath + '/images/docs/Sarasota_Calendar.pdf')" role="link to sarasota calendar">
-        <img ng-src="{{assetsPath}}/images/docs/Sarasota_Calendar.png" alt="Sarasota Calendar" class="center-block" style="width:90%"/>
-      </a>
-      
-      <p>
-        <h3 style="text-align:center">Sarasota<br>
-        <em>May 7, 2018 to June 1, 2018</em></h3>
-        <p>**Downtown Farmer’s Market - An eclectic mix of local produce, plants, ready-made delicacies and more!</p>
-        <p>**Historic Spanish Point- See the gardens at a special Let’s Go Places price of $10 for first time riders.</p>
-        <p>**Lido Pool- Cool off, swim laps or just soak up the rays at the pool. Admission is just $2!</p>
-        <p>Marie Selby Gardens- A tropical oasis with unparalleled horticulture displays right on the bay. Tickets are $20.</p>
-        <p>**Parkway Cinema- If you prefer to spend those hot summer days indoors, let us know what movie you’d like to see.</p>
-        <p>**Ringling College- The works of nationally known illustrator, Octavio Perez, will be on display in the Thompson Gallery.</p>
-        <p>**Ringling Museum– A fantastic collection of European art and it’s FREE on Mondays!</p>
-        <p>Sarasota Orchestra Pops Concert– A range of popular hits in an outdoor setting with special guests and a fireworks display. Call 893- 6300 to get your tickets ahead of time as they often sell out!</p>
-        <p>**Turtle Beach- Come enjoy the natural beauty Sarasota has to offer. Take a stroll down the beach or take a dip in the Gulf if you’re
-        feeling daring.</p>
-        <p>**Venice Downtown– Take a stroll down picturesque Venice Ave, and check out some of their unique stores and restaurants</p>
-      </p>
-      
-    </div>
-    
-    <div class="jumbotron section container" id="venice">
-      <h2 class="ta-center">Venice Calendar & Activities</h2>
-      <a ng-click="redirectToURL(assetsPath + '/images/docs/Venice_Calendar.pdf')" role="link to venice calendar">
-        <img ng-src="{{assetsPath}}/images/docs/Venice_Calendar.png" alt="Venice Calendar" class="center-block" style="width:90%"/>
-      </a>
-      <p>
-        <h3 style="text-align:center">Venice<br>
-        <em>May 7, 2018 to June 1, 2018</em></h3>
-        <p>**Caspersen Beach - Come enjoy the natural beauty Venice has to offer. Take a stroll down the beach or take a dip in the Gulf if you’re
-        feeling daring.</p>
-        <p>**Galleria Matinee - $6 Movies! If you prefer to spend those hot summer days indoors, let us know what movie you’d like to see.</p>
-        <p>**Historic Spanish Point - Come see the gardens at a special Let’s Go Places price of $10 for first time riders.</p>
-        <p>**Memorial Day Ceremony – Sponsored by VFW Post 8118, and free of charge, a ceremony honoring our fallen heroes.</p>
-        <p>Myakka Wildlife Airboat or Tram Tour - See our local flora and fauna in a unique way. Tours are $15.</p>
-        <p>**Senior Friendship Center – Live music and dancing with the Upbeat Gang. Concerts are $7 for non-members. The Sprouts Program provides FREE produce to seniors and the FREE Memorial Day Party will have music, dancing and fun while honoring our military.</p>
-        <p>**Venice Farmer’s Market - An eclectic mix of local produce, plants, crafts and artwork, ready-made delicacies and more! **Venice Museum - a collection pertaining to area history, housed in the historic Triangle Inn. FREE!</p>
-        <p>Venice Theatre – The 23rd Annual Loveland Show is one of the feel good shows of the year! Done in partnership with the Loveland Center it gives a chance for adults with intellectual and developmental challenges grow and learn through theatre study. Please call the box office at (941)488-1115 to purchase tickets.</p>
-      </p>
-    </div><!--jumbo-->
-    
     
     <div class="jumbotron section container">
-          <div class="form-area" style="background: #c7dfe4;border:none"> 
+          <div class="form-area" style="margin:auto;border:none;width:70%"> 
             <form name="itnForm" novalidate ng-submit="submitForm('contact')" role="contact form" ng-model="formData">
               <br style="clear:both">
-              <h3 style="margin-bottom: 25px; text-align: center">
-                Contact ITN<em>{{affiliate}} for more information about Member Programs</em>
-              </h3>
+              <p style="text-align:center">Please contact us below for more information about Member Programs</p>
+              <hr align="center" class="orange-hr">
                       
               <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>

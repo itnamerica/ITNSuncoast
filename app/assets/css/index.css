@@ -1720,6 +1720,15 @@ form textarea.form-control {font-size:25px}
   color: #fc6d6d;
   background-color: #fc6d6d;
 }
+.orange-hr {
+  width: 35%;
+  border: none;
+  height: 5px;
+  color: #fc6d6d;
+  background-color: #fc6d6d;
+  margin-left: auto;
+  margin-right: auto;
+}
 .red-section {
   background: #fc6d6d;
   color: white;
