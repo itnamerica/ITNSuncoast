@@ -157,7 +157,7 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     }
   ]);
 
-myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorScroll', '$location', '$stateParams', '$timeout', '$state', '$rootScope', '$window', '$filter' function ($scope, $transitions, $http, $anchorScroll, $location, $stateParams, $timeout, $state, $rootScope, $window, $filter)  {
+myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorScroll', '$location', '$stateParams', '$timeout', '$state', '$rootScope', '$window', '$filter', function ($scope, $transitions, $http, $anchorScroll, $location, $stateParams, $timeout, $state, $rootScope, $window, $filter)  {
   console.log('inside main controller');
 
   $scope.assetsPath = "assets";
@@ -169,6 +169,7 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
     $scope.viewsPath = "../app/views";
   };
   
+  var checkboxFilter = $filter('inputSelected');
   $scope.affiliate = "Suncoast";
   $scope.zoomLevel = 1;
   $scope.tab = 1;
@@ -389,7 +390,7 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
         html: "<p><strong>Name:</strong>: " + $scope.formData.name + "</p>\n" +
         "<p><strong>Email:</strong>: " + $scope.formData.email + "</p>\n " +
         "<p><strong>Phone:</strong>: " + $scope.formData.phone + "</p>\n " +
-        "<p><strong>Activities:</strong>: " + $filter('inputSelected')($scope.formData.activity) + "</p>\n " +
+        "<p><strong>Activities:</strong>: " + checkboxFilter($scope.formData.activity) + "</p>\n " +
         "<p><strong>Is ITN member:</strong>: " + $scope.formData.isMember + "</p>\n "
       }
     }
