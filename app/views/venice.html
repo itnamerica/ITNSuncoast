@@ -13,7 +13,10 @@
     <div class="container itn-green-bg">
   
     <div class="jumbotron section container" id="venice">
-      <h2 class="ta-center">Venice Calendar & Activities</h2>
+      <div class="itn-title mb-50">
+        <h2>Venice Calendar & Activities</h2>
+        <hr align="left" width="35%">
+      </div>
       <a ng-click="redirectToURL(assetsPath + '/images/docs/Venice_Calendar.pdf')" role="link to venice calendar">
         <img ng-src="{{assetsPath}}/images/docs/Venice_Calendar.png" alt="Venice Calendar" class="center-block" style="width:90%"/>
       </a>
@@ -42,8 +45,6 @@
       <div class="form-area" style="margin:auto;border:none;width:70%"> 
         <form name="itnForm" novalidate ng-submit="submitForm('Venice')" role="contact form" ng-model="formData">
           <br style="clear:both">
-          <p style="text-align:center">Please contact us below for more information about Member Programs</p>
-          <hr align="center" class="orange-hr">
                   
           <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
             <input type="text" class="form-control" id="name" name="name" placeholder="Name of Attendee *" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>
@@ -53,13 +54,13 @@
           </div>
           
           <div class="form-group" ng-class="{ 'has-error' : itnForm.mobile.$invalid && !itnForm.mobile.$pristine }">
-            <input type="text" class="form-control" id="mobile" name="mobile" ng-pattern="phonePattern" placeholder="Phone Number. Example: 617-344-9876" ng-model="formData.phone" required>
+            <input type="text" class="form-control" id="mobile" name="mobile" ng-pattern="phonePattern" placeholder="Phone Number*. Example: 617-344-9876" ng-model="formData.phone" required>
             <span ng-if="itnForm.mobile.$error.required && !itnForm.mobile.$pristine" class="help-block">{{errorMessages.required}}</span>
             <span ng-if="itnForm.mobile.$error.pattern" class="help-block">{{errorMessages.phone}}</span>
           </div>
         
           <div class="form-group" ng-class="{ 'has-error' : itnForm.email.$invalid && !itnForm.email.$pristine }">
-            <input type="text" class="form-control" id="email" name="email" ng-pattern="emailPattern" placeholder="Email" ng-model="formData.email" required>
+            <input type="text" class="form-control" id="email" name="email" ng-pattern="emailPattern" placeholder="Email*" ng-model="formData.email" required>
             <span ng-if="itnForm.email.$error.required && !itnForm.email.$pristine" class="help-block">{{errorMessages.required}}</span>
             <span ng-if="itnForm.email.$error.pattern" class="help-block">{{errorMessages.email}}</span>
           </div>

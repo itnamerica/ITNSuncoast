@@ -389,7 +389,7 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
         html: "<p><strong>Name:</strong>: " + $scope.formData.name + "</p>\n" +
         "<p><strong>Email:</strong>: " + $scope.formData.email + "</p>\n " +
         "<p><strong>Phone:</strong>: " + $scope.formData.phone + "</p>\n " +
-        "<p><strong>Activities:</strong>: " + $scope.formData.activities + "</p>\n " +
+        "<p><strong>Activities:</strong>: " + $scope.formData.activity + "</p>\n " +
         "<p><strong>Is ITN member:</strong>: " + $scope.formData.isMember + "</p>\n "
       }
     }
