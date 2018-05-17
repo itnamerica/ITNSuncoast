@@ -36,70 +36,57 @@
     </div><!--jumbo-->
     
     
-    <div class="jumbotron section container" id="register-venice">
-      <div class="itn-title">
-        <h2>Register for a Venice Event</h2>
-        <hr align="left" width="35%">
-      </div>
-      
-      <div class="form-area" style="margin:auto;border:none;width:70%"> 
-        <form name="itnForm" novalidate ng-submit="submitForm('Venice')" role="contact form" ng-model="formData">
-          <br style="clear:both">
-                  
-          <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
-            <input type="text" class="form-control" id="name" name="name" placeholder="Name of Attendee *" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>
-            <span ng-if="itnForm.name.$error.required && !itnForm.name.$pristine" class="help-block">{{errorMessages.required}}</span>
-            <span ng-if="itnForm.name.$error.minlength" class="help-block">{{errorMessages.minlength}}</span>
-            <span ng-if="itnForm.name.$error.maxlength" class="help-block">{{errorMessages.maxlength}}</span>
-          </div>
-          
-          <div class="form-group" ng-class="{ 'has-error' : itnForm.mobile.$invalid && !itnForm.mobile.$pristine }">
-            <input type="text" class="form-control" id="mobile" name="mobile" ng-pattern="phonePattern" placeholder="Phone Number*. Example: 617-344-9876" ng-model="formData.phone" required>
-            <span ng-if="itnForm.mobile.$error.required && !itnForm.mobile.$pristine" class="help-block">{{errorMessages.required}}</span>
-            <span ng-if="itnForm.mobile.$error.pattern" class="help-block">{{errorMessages.phone}}</span>
-          </div>
-        
-          <div class="form-group" ng-class="{ 'has-error' : itnForm.email.$invalid && !itnForm.email.$pristine }">
-            <input type="text" class="form-control" id="email" name="email" ng-pattern="emailPattern" placeholder="Email*" ng-model="formData.email" required>
-            <span ng-if="itnForm.email.$error.required && !itnForm.email.$pristine" class="help-block">{{errorMessages.required}}</span>
-            <span ng-if="itnForm.email.$error.pattern" class="help-block">{{errorMessages.email}}</span>
-          </div>
-    
-          <div class="form-group ta-center">
-            <label for="venice activity">Activity: *</label><br>
-            <label class="checkbox-inline"><input ng-model="formData.activity.fieldBand" type="checkbox" value="US Army Field Band">US Army Field Band</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.gentlemenOfJazz" type="checkbox" value="Gentlemen of Jazz">Gentlemen of Jazz</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.stPatrick" type="checkbox" value="St Patrick's Day Party">St Patrick's Day Party</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.veniceSymphony" type="checkbox" value="Venice Symphony">Venice Symphony</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.spanishPoint" type="checkbox" value="Spanish Point">Spanish Point</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.legacyTrail" type="checkbox" value="Legacy Trail Surrey Ride">Legacy Trail Surrey Ride</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.target" type="checkbox" value="Target">Target</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.silverFoxes" type="checkbox" value="Silver Foxes">Silver Foxes</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.midSummer" type="checkbox" value="A Midsummer Night’s Dream">A Midsummer Night’s Dream</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.firstWatch" type="checkbox" value="First Watch">First Watch</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.veniceMuseum" type="checkbox" value="Venice Museum">Venice Museum</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.bossaNova" type="checkbox" value="Bossa Nova All Stars">Bossa Nova All Stars</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.movieMatinee" type="checkbox" value="Movie Matinee">Movie Matinee</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.trainDepotTour" type="checkbox" value="Train Depot Tour">Train Depot Tour</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.acapella" type="checkbox" value="Semi Toned Acapella">Semi Toned Acapella</label>
-            <label class="checkbox-inline"><input ng-model="formData.activity.farmersMarket" type="checkbox" value="Farmer's Market">Farmer's Market</label>
-          </div>
-          
-          <div class="form-group ta-center">
-            <label for="Heard about ITN">Are you an ITNSunCoast Member?: *</label><br>
-            <label class="radio-inline"><input ng-model="formData.isMember" type="radio" value="yes">Yes</label>
-            <label class="radio-inline"><input ng-model="formData.isMember" type="radio" value="no">No</label>
-          </div>
+    <div class="jumbotron section container">
+      <hr align="center" class="orange-hr">
+          <div class="form-area" style="margin:auto;border:none;width:70%"> 
+            <form name="itnForm" novalidate ng-submit="submitForm('contact')" role="contact form" ng-model="formData">
+              <br style="clear:both">
+              <p style="text-align:center"><strong>Please contact us below for more information about Member Programs</strong></p>
+              <hr align="center" class="orange-hr">
+                      
+              <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>
+                <span ng-if="itnForm.name.$error.required && !itnForm.name.$pristine" class="help-block">{{errorMessages.required}}</span>
+                <span ng-if="itnForm.name.$error.minlength" class="help-block">{{errorMessages.minlength}}</span>
+                <span ng-if="itnForm.name.$error.maxlength" class="help-block">{{errorMessages.maxlength}}</span>
+              </div>
             
-          <input type="submit" id="submit" ng-hide="loading" class="btn btn-lg btn-primary pull-right itn-green-bg" value="Send" style="margin-left:2%">
-          <input type="button" ng-click="formData = {}" value="Reset Form" class="btn btn-lg pull-right itn-green-bg"  style="margin-left:2%">
-        
-        </form>
-      </div>
-      <p ng-if="loading"><em>Loading. Please wait</em></p>
-      <p style="color:red; margin-top:50px"><strong>{{serverMessage}}</strong></p>
-  
-    </div>
+              <div class="form-group" ng-class="{ 'has-error' : itnForm.email.$invalid && !itnForm.email.$pristine }">
+                <input type="text" class="form-control" id="email" name="email" ng-pattern="emailPattern" placeholder="Email" ng-model="formData.email" required>
+                <span ng-if="itnForm.email.$error.required && !itnForm.email.$pristine" class="help-block">{{errorMessages.required}}</span>
+                <span ng-if="itnForm.email.$error.pattern" class="help-block">{{errorMessages.email}}</span>
+              </div>
+            
+              <div class="form-group" ng-class="{ 'has-error' : itnForm.mobile.$invalid && !itnForm.mobile.$pristine }">
+                <input type="text" class="form-control" id="mobile" name="mobile" ng-pattern="phonePattern" placeholder="Mobile Number. Example: 617-344-9876" ng-model="formData.phone" required>
+                <span ng-if="itnForm.mobile.$error.required && !itnForm.mobile.$pristine" class="help-block">{{errorMessages.required}}</span>
+                <span ng-if="itnForm.mobile.$error.pattern" class="help-block">{{errorMessages.phone}}</span>
+              </div>
+              
+              <div class="form-group" ng-class="{ 'has-error' : itnForm.subject.$invalid && !itnForm.subject.$pristine }">
+                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" ng-model="formData.subject" ng-minlength="minlength" ng-maxlength="maxlength" required>
+                <span ng-if="itnForm.subject.$error.required && !itnForm.subject.$pristine" class="help-block">{{errorMessages.required}}</span>
+                <span ng-if="itnForm.subject.$error.minlength" class="help-block">{{errorMessages.minlength}}</span>
+                <span ng-if="itnForm.subject.$error.maxlength" class="help-block">{{errorMessages.maxlength}}</span>
+              </div>
+              
+              <div class="form-group" ng-class="{ 'has-error' : itnForm.message.$invalid && !itnForm.message.$pristine }">
+                <textarea class="form-control" type="textarea" name="message" id="message" placeholder="Message" maxlength="2000" rows="7" ng-minlength="minlength" ng-maxlength="maxMsgLength" ng-model="formData.messageBody" required></textarea>
+                <span ng-if="itnForm.message.$error.required && !itnForm.message.$pristine" class="help-block">{{errorMessages.required}}</span>
+                <span ng-if="itnForm.message.$error.minlength" class="help-block">{{errorMessages.minlength}}</span>
+                <span ng-if="itnForm.message.$error.maxlength" class="help-block">{{errorMessages.maxlength}}</span>
+                  <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+              </div>
+                
+              <input type="submit" id="submit" ng-hide="loading" class="btn btn-lg btn-primary pull-right itn-green-bg" value="Send" style="margin-left:2%">
+              <input type="button" ng-click="formData = {}" value="Reset Form" class="btn btn-lg pull-right itn-green-bg"  style="margin-left:2%">
+            
+            </form>
+          </div>
+        <p ng-if="loading"><em>Loading. Please wait</em></p>
+        <p style="color:red; margin-top:50px"><strong>{{serverMessage}}</strong></p>
+      </div><!--container-->
+    
   
     
   </div><!--section-container-->
