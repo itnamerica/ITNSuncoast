@@ -123,6 +123,10 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         url: '/venice',
         templateUrl: viewsPath + 'venice.html'
       })
+      .state('brandeton', {
+        url: '/brandeton',
+        templateUrl: viewsPath + 'brandeton.html'
+      })
       .state('help-on-wheels', {
         url: '/help-on-wheels',
         templateUrl: viewsPath + 'help-on-wheels.html'
@@ -230,6 +234,7 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
     {name: 'Program Details', state: 'program-details', url: $scope.viewsPath + '/program-details.html'},
     {name: 'Sarasota Activities', state: 'sarasota', url: $scope.viewsPath + '/sarasota.html'},
     {name: 'Venice Activities', state: 'venice', url: $scope.viewsPath + '/venice.html'},
+    {name: 'Bradenton Activities', state: 'bradenton', url: $scope.viewsPath + '/bradenton.html'},
   ];
   
 
@@ -381,7 +386,7 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
         "<p><strong>Subject:</strong>: " + $scope.formData.subject + "</p>\n " +
         "<p><strong>Message Body:</strong>: " + $scope.formData.messageBody + "</p>\n "
       }
-    } else if (formType === 'Venice' || formType === 'Sarasota'){
+    } else if (formType === 'Venice' || formType === 'Sarasota' || formType === 'Bradenton'){
       formObj = {
         from: '"ITNSuncoast Web User" <donotreply@itnamerica.com>',
         to: 'itnamerica2018@gmail.com',

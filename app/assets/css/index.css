@@ -73,9 +73,9 @@ nav .navbar-nav a .fa-newspaper {color: #529ba8}
 nav .navbar-nav a .glyphicon-envelope {color: #e05944;}
 nav .navbar-nav a .fa-car {color: #529ba8;}
 nav .navbar-nav a .glyphicon-heart {color: #e05944;}
-nav .navbar-nav a .fa-hand-paper-o {color: #529ba8;}
+nav .navbar-nav a .fa-hand-paper-o {color: #e05944;}
 /*nav .navbar-nav a .glyphicon-usd {color: #e05944;}*/
-nav .navbar-nav a .fa-sun-o {color: #e05944;}
+nav .navbar-nav a .fa-sun-o {color: #529ba8;}
 
 nav .dropdown-menu {
   background: #399eaa;
@@ -1343,6 +1343,10 @@ form input[type=text], form input#email {
   height:50px;
 }
 form textarea.form-control {font-size:25px}
+.signature-checkbox {
+    color: red;
+    font-weight: bold;
+  }
 .member-app .checkbox-inline, .volunteer-app .checkbox-inline {line-height: 1}
 #pdfVersion {
   display:none;
