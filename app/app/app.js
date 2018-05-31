@@ -398,6 +398,14 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
         "<p><strong>Activities:</strong>: " + checkboxFilter($scope.formData.activity) + "</p>\n " +
         "<p><strong>Is ITN member:</strong>: " + $scope.formData.isMember + "</p>\n "
       }
+    } else if (formType === 'newsletter'){
+        formObj = {
+          from: '"ITNSuncoast Web User" <donotreply@itnamerica.com>',
+          to: 'itnamerica2018@gmail.com',
+          subject: "ITNSuncoast Request to be added to Newsletter",
+          text: $scope.formData,
+          html: "<p><strong>Email:</strong>: " + $scope.formData.email + "</p> "
+        }
     }
     $http.post('/sendmail', formObj).then(function(res){
         // $scope.loading = false;
