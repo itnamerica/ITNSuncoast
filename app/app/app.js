@@ -123,9 +123,9 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         url: '/venice',
         templateUrl: viewsPath + 'venice.html'
       })
-      .state('brandeton', {
-        url: '/brandeton',
-        templateUrl: viewsPath + 'brandeton.html'
+      .state('bradenton', {
+        url: '/bradenton',
+        templateUrl: viewsPath + 'bradenton.html'
       })
       .state('help-on-wheels', {
         url: '/help-on-wheels',
