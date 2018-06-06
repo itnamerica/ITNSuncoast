@@ -21,9 +21,9 @@
           <div class="newsletter-title"><h3>Newsletters</h3></div>
           <img ng-src="{{assetsPath}}/images/icons/news-noword.png" alt="press icon"/>
           <ul>
-            <li class="wow fadeInUp" data-wow-delay=".1s" style="white-space:nowrap;font-size:30px;margin-bottom:10%"><a ui-sref="contact({signup: true})"><strong>**Sign up to our newsletter!**</strong></a>
+            <li class="wow fadeInUp">
+              <a ng-click="redirectToURL(assetsPath + '/images/docs/newsletters/Newsletter_June_2018.pdf')" role="link to newsletter">Newsletter June 2018</a>
             </li>
-
             <li class="wow fadeInUp">
               <a ng-click="redirectToURL(assetsPath + '/images/docs/newsletters/Newsletter_May_2018.pdf')" role="link to newsletter">Newsletter May 2018</a>
             </li>
