@@ -154,6 +154,15 @@
               </a>
             </li>
             
+            <li class="dropdown">
+              <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-calendar"></i>
+                EVENTS
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a ng-click="redirectToURL(assetsPath + '/images/docs/come_ride_pdf.pdf')" role="link to come ride with us sponsorship opportunities">Come Ride With Us! 2019 Opportunities</a></li>
+              </ul>
+            </li>
 
           </ul>
         </div>
@@ -161,7 +170,7 @@
       </div><!-- /.container-fluid -->
       
       <!--ZOOM BUTTONS-->
-      <span style="margin-left:90%;position:absolute;margin-top:-100px !important;">
+      <span style="margin-left:90%;position:absolute;margin-top:-70px !important;">
         <img ng-src="{{assetsPath}}/images/icons/resize-large.png"/ ng-click="resizeText(0.1)">
         <img ng-src="{{assetsPath}}/images/icons/resize-default.jpg" ng-click="resizeText()"/>
         <img ng-src="{{assetsPath}}/images/icons/resize-small.png" ng-click="resizeText(-0.1)"/>
