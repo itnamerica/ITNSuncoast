@@ -48,6 +48,10 @@ nav .navbar-header img {
   /*margin-top: 25px;*/
   height: 60px;
 }
+nav .logo-legend {
+  position:absolute;
+  margin-left:-10%;
+}
 nav .navbar-nav {
   margin-top: 25px;
   margin-right: 2%;
@@ -1859,6 +1863,9 @@ h2,h3 {line-height:1.7}
 }
 
 @media (max-width: 768px) {
+  nav .logo-legend {
+    margin-left:3%;
+  }
   .navbar-collapse {
     margin-top: 90px;
     border: 0px;
