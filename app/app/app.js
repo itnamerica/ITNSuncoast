@@ -156,6 +156,10 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         url: '/help-on-wheels',
         templateUrl: viewsPath + 'help-on-wheels.html'
       })
+      .state('community-partners', {
+        url: '/community-partners',
+        templateUrl: viewsPath + 'community-partners.html'
+      })
 
   // default fall back route
   $urlRouterProvider.otherwise('/');

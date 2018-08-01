@@ -554,7 +554,7 @@ nav .dropdown-menu li.divider{
     border-radius: 5px;
 }
 
-.corporate #first-hero-corporate {
+.corporate #first-hero-corporate, .community-partners #first-hero-comm-partners {
   background-image: url('../images/dark/hands4-itn.jpg') !important;
   background-attachment: fixed;
   background-position: center center !important;
@@ -563,7 +563,7 @@ nav .dropdown-menu li.divider{
   height: 400px !important;
 }
 
-.corporate #first-hero-corporate h1{
+.corporate #first-hero-corporate h1, .community-partners #first-hero-comm-partners h1{
   color:white !important;
   text-shadow: 2px 2px #529ba8;
   margin-top:170px !important;
@@ -1859,6 +1859,7 @@ h2,h3 {line-height:1.7}
 /* RESPONSIVE */
 
 
+
 @media (max-width: 1210px) {
   .carousel-inner .item, .carousel-inner .item img {height:400px;}
   .family #gift-cert-img1, .family #gift-cert-img2 {visibility:hidden;}
@@ -2080,6 +2081,12 @@ h2,h3 {line-height:1.7}
   #footer .search {display:none}
   
   
+}
+
+@media (min-width: 1534px) {
+  nav .navbar-header {
+    margin-left:42% !important;
+  }
 }
 
 
