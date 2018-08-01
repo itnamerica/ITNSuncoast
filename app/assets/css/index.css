@@ -1483,9 +1483,9 @@ form textarea.form-control {font-size:25px}
 .places #first-hero-places {
   background-image: url('../images/Lets_Go_Places_banner_logo.png');
   background-attachment: fixed;
-  /* background-position: right top; */
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
+  width:100%;
   /* height: 400px; */
 }
 
