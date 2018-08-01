@@ -15,7 +15,7 @@
   <div class="carousel-inner">
     <div class="item active">
       <a ng-click="redirectToURL(assetsPath + '/images/docs/come_ride_pdf.pdf')" role="link to come ride with us sponsorship opportunities">
-      <img ng-src="{{assetsPath}}/images/ITN-come-ride-slider.png" alt="banner image for the Come Ride wih Us sponsorship opportunities" style="margin-top:100px">
+      <img ng-src="{{assetsPath}}/images/come-ride-slider2.png" alt="banner image for the Come Ride wih Us sponsorship opportunities" style="height:auto">
     </a>
     </div>
     
@@ -201,11 +201,14 @@
   $(document).ready(function() {
     new WOW().init();
     
-    $('#myModal').modal('show');
-    
     $('.carousel').carousel({
       interval: 3500
     })
+    
+    setTimeout(function(){
+        $('#myModal').modal('show');
+    }, 5000);
+    
     
     // var firstTime = true;
     // $(window).scroll(function() {

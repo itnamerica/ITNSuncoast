@@ -1481,12 +1481,12 @@ form textarea.form-control {font-size:25px}
 } 
 
 .places #first-hero-places {
-  background-image: url('../images/dark/lets_go_places.jpg');
+  background-image: url('../images/Lets_Go_Places_banner_logo.png');
   background-attachment: fixed;
-  background-position: right top;
+  /* background-position: right top; */
   background-size: cover;
   background-repeat: no-repeat;
-  height: 400px;
+  /* height: 400px; */
 }
 
 .places #first-hero-places h1 {
