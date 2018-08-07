@@ -1932,6 +1932,12 @@ h2,h3 {line-height:1.7}
 
 @media (max-width: 450px) {
   
+  nav .container-fluid {padding-bottom:50px}
+  nav .navbar-header .navbar-brand {margin-left:18%}
+  nav .navbar-toggle {margin-left:0}
+  .zoom-btns {visibility:hidden !Important}
+  button.navbar-toggle.collapsed {margin-left: 0 !important}
+  
   .navbar-collapse {
     max-height: 1000px;
   }
