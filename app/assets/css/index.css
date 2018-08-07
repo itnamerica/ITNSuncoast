@@ -1490,6 +1490,7 @@ form textarea.form-control {font-size:25px}
 }
 
 .places #first-hero-places h1 {
+  visibility:hidden;
   color:#529ba8;
   text-shadow: 2px 2px #529ba8;
   margin-top:170px;
@@ -1924,6 +1925,9 @@ h2,h3 {line-height:1.7}
 @media (max-width: 768px) {
   nav .navbar-header {
       margin-left:0 !important;
+  }
+  .places #first-hero-places {
+    background-position:center 0px;
   }
 }
 
