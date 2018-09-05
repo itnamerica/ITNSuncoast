@@ -23,19 +23,22 @@
       
       <p>
         <h3 style="text-align:center">Bradenton<br>
-        <em>August 2018</em></h3>
+        <em>September 2018</em></h3>
+        <h4><em>Notes (**Indicates a Free or Low Cost Event or other discount):</em></h4>
         
-          <p>**AMC Matinee- If you prefer to spend those hot summer days indoors, let us know what movie you’d like to see.</p>
-          <p>**Culvers- From burgers to frozen custard they have something for everyone. Bring your calendar for a 15% discount!</p>
-          <p>**Ellenton Outlets- Great for window shopping and offers some of the best deals in the area!</p>
-          <p>Florida Railroad Museum- A 13 mile round trip train ride through Parrish. Tickets start at $14, please purchase them ahead of time by calling 776-0906 Wednesday-Sunday 10am-4pm.</p>
-          <p>**Mixon Fruit Farm & Wildlife Rescue- Take a tram tour through the groves, gardens & wildlife rescue. Tram tickets are $10.</p>
-          <p>**Palmetto Historical Park- Take a tour through some of the oldest buildings in the area. Free admission, but donations are welcome.</p>
-          <p>**Red Barn Flea Market- Enjoy the open air farmer’s market & hundreds of booths for finding hidden treasures.</p>
-          <p>**Renaissance on 9th: Outdoor Game Club- Meet at Motorworks Brewing for bocce ball, mini golf & more, weather permitting. This is a free event!</p>
-          <p>South Florida Museum- Visit the manatees, take in a star show at the planetarium, or wander the exhibits. Tickets are $17.</p> 
-          <p>**Village of the Arts- A mix of galleries & restaurants in a charming neighborhood. Take a stroll, grab a bite & be inspired!</p>
-      
+        <p>**AMC Matinee- If you prefer to spend those hot summer days indoors, let us know what movie you’d like to see.</p>
+        <p>**Culvers- From burgers to frozen custard they have something for everyone. Bring your calendar for a 15% discount!</p>
+        <p>**Ellenton Outlets- Great for window shopping and offers some of the best deals in the area!</p>
+        <p>Florida Railroad Museum- A 13 mile round trip train ride through Parrish. Tickets start at $14, please purchase them ahead of time by calling 776-0906 Wednesday-Sunday 10am-4pm.</p>
+        <p>**Manatee Village Historical Park- A collection of historic buildings that tell the story of pioneer life in Florida. Free admission, but
+        donations are welcome.</p>
+        <p>**Mixon Fruit Farm & Wildlife Rescue- Take a tram tour through the groves, gardens & wildlife rescue. Tram tickets are $10.</p>
+        <p>**Palmetto Historical Park- Take a tour through some of the oldest buildings in the area. Free admission, but donations are welcome.</p>
+        <p>**Red Barn Flea Market- Enjoy the open air farmer’s market & hundreds of booths for finding hidden treasures. </p>
+        <p>**Renaissance on 9th: Coffee & Talk-Meet new people and start a conversation. This event is $3 for non-members.</p>
+        <p>South Florida Museum- Visit the manatees, take in a star show at the planetarium, or wander the exhibits. Tickets are $17. </p>
+        <p>**Village of the Arts- A mix of galleries & restaurants in a charming neighborhood. Take a stroll, grab a bite & be inspired!</p>
+      </p>
     </div>
     
     <div class="jumbotron section container" id="register-bradenton">
@@ -45,12 +48,9 @@
       </div>
       
       <div class="jumbotron section container">
-        <hr align="center" class="orange-hr">
             <div class="form-area" style="margin:auto;border:none;width:70%"> 
               <form name="itnForm" novalidate ng-submit="submitForm('contact')" role="contact form" ng-model="formData">
                 <br style="clear:both">
-                <p style="text-align:center"><strong>Please contact us below for more information about Bradenton Events</strong></p>
-                <hr align="center" class="orange-hr">
                         
                 <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
                   <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>

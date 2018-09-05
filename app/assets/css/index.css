@@ -1487,6 +1487,9 @@ form textarea.form-control {font-size:25px}
   background-repeat: no-repeat;
   width:100%;
   background-position:center 50px;
+  margin-top: 2%;
+  border-top: 5px solid #0d8999;
+  border-bottom: 5px solid #0d8999;
 }
 
 .places #first-hero-places h1 {

@@ -22,30 +22,35 @@
       </a>
       <p>
         <h3 style="text-align:center">Venice<br>
-        <em>August 2018</em></h3>
+        <em>September 2018</em></h3>
+        <h4><em>Notes (**Indicates a Free or Low Cost Event or other discount):</em></h4>
+        
         <p>**Bentley’s Homemade Ice Cream- Few things are better than ice cream on a hot summer day and we’re giving you two opportunities to do so.</p>
-
+        <p>Clyde Butcher Gallery and Studio- See one of the area’s best known studios specializing in black and white photography of untouched
+         Florida.</p>
         <p>**Culvers- From burgers to frozen custard they have something for everyone.</p>
-
         <p>**Galleria Matinee- $6 Movies! If you prefer to spend those hot summer days indoors, let us know what movie you’d like to see.</p>
-        <p>Habitat ReStore & Lunch- Get in some shopping at the ReStore where they have everything from clothing to furniture and then go to lunch at a TBA location.</p>
-        <p>**Lunch & Learn- Medicare: What You Don’t Know Can Hurt You.  Free event, call 548-4433 to RSVP!</p>
-        <p>**Senior Friendship Center– The Annual Luau will have live music & dancing while the Disaster Preparedness Seminar will help you prepare for the upcoming hurricane season. Both are free events!</p>
-        <p>**Venice Farmer’s Market- An eclectic mix of local produce, plants, crafts and artwork, ready-made delicacies and more! </p>
+        <p>Habitat ReStore & Lunch- Get in some shopping at the ReStore where they have everything from clothing to furniture and then go to
+        lunch at a TBA location.</p>
+        <p>**Senior Friendship Center– Local favorite, Patti Highland, will be performing live. Free event but donations are appreciated!</p>
+        <p>**Venice Farmer’s Market- An eclectic mix of local produce, plants, crafts and artwork, ready-made delicacies and more!</p>
         <p>**Venice Museum- A collection pertaining to area history, housed in the historic Triangle Inn. FREE!</p>
-        <p>Venice Theatre- VT has several offerings this month including some one of a kind cabaret performances by local favorites like Kristofer Geddie and Michelle Kasonofsky. They’re also doing the Sondheim favorite Into The Woods. Call 488-1115 for tickets!</p>
-        <p>Venice Wine Walk Downtown- Check in to get a $10 wristband and stroll historic downtown Venice while enjoying specials at various restaurants and shops.</p>
-      </p>
+        <p>**Venice Beach Party- A sunset party to celebrate the end of summer. Food vendors, live music and more. Free admission!</p>
+        <p>Venice Theatre- The Goldtones, one of the hottest doo-wop groups in Florida, is back by popular demand. The Tony winning Peter & the Star Catcher upends the traditional Peter Pan story. Call 488-1115 for tickets!</p>
+        <p>Venice Downtown Sidewalk Sale- A great time to get out and see the newest and latest in fashion, and get some bargains.</p>
     </div><!--jumbo-->
     
     
-    <div class="jumbotron section container">
-      <hr align="center" class="orange-hr">
+    <div class="jumbotron section container" id="register-venice">
+      <div class="itn-title">
+        <h2>Register for a Venice Event</h2>
+        <hr align="left" width="35%">
+      </div>
+
+      <div class="jumbotron section container">
           <div class="form-area" style="margin:auto;border:none;width:70%"> 
             <form name="itnForm" novalidate ng-submit="submitForm('contact')" role="contact form" ng-model="formData">
               <br style="clear:both">
-              <p style="text-align:center"><strong>Please contact us below for more information about Venice Events</strong></p>
-              <hr align="center" class="orange-hr">
                       
               <div class="form-group" ng-class="{ 'has-error' : itnForm.name.$invalid && !itnForm.name.$pristine }">
                 <input type="text" class="form-control" id="name" name="name" placeholder="Name" ng-minlength="minlength" ng-maxlength="maxlength" ng-model="formData.name" required>
