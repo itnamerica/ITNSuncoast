@@ -160,6 +160,10 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
         url: '/community-partners',
         templateUrl: viewsPath + 'community-partners.html'
       })
+      .state('event-page', {
+        url: '/event-page',
+        templateUrl: viewsPath + 'event-page.html'
+      })
 
   // default fall back route
   $urlRouterProvider.otherwise('/');
