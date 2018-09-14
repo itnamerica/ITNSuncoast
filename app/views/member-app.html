@@ -156,7 +156,7 @@
                           <span ng-if="itnForm.email.$error.pattern" class="help-block">{{errorMessages.email}}</span>
                         </div> 
                         
-                        <div ng-if="familyMembership">
+                        <div ng-show="familyMembership">
   
                           <h2 class="mt-50 mb-25">Additional Information for Family Membership Only</h2>
                           
@@ -1124,7 +1124,7 @@
     <br><label for="email">Email: </label><br>
     {{formData.email}}
     
-    <div ng-if="familyMembership">
+    <div ng-show="familyMembership">
       <h3>Second Rider Information</h3>
       
       <br><label for="second rider name">Second Rider's Name: <span style="color:red">*</span></label><br>
