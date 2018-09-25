@@ -187,7 +187,7 @@ myApp.config(function($stateProvider, $urlRouterProvider, $locationProvider){
     }
   ]);
 
-myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorScroll', '$location', '$stateParams', '$timeout', '$state', '$rootScope', '$window', 'FormService', '$sce', function ($scope, $transitions, $http, $anchorScroll, $location, $stateParams, $timeout, $state, $rootScope, $window, FormService, $sce)  {
+myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorScroll', '$location', '$stateParams', '$timeout', '$state', '$rootScope', '$window', 'FormService', '$sce', 'APIService', function ($scope, $transitions, $http, $anchorScroll, $location, $stateParams, $timeout, $state, $rootScope, $window, FormService, $sce, APIService)  {
   console.log('inside main controller');
 
   $scope.assetsPath = "assets";
@@ -919,11 +919,25 @@ $scope.checkRequiredFields = function(formType){
     };
     
     $scope.showFormPage = function(pageNum) {
-      console.log('inside form page, pagenum is ', pageNum);
-      if (pageNum) {
-        $scope.tab = pageNum
-      }
-  };
+        console.log('inside form page, pagenum is ', pageNum);
+        if (pageNum) {
+          $scope.tab = pageNum
+        }
+    };
+    
+    $scope.getContentFromURL = function(url) {
+      APIService.getContentFromURL(url).then(function(data){
+        console.log('url content data from func is ', data.data);
+        $scope.contentURL = data.data;
+      })
+    };
+    
+    $scope.getRidesData = function(){
+        APIService.getAllRides().then(function(data){
+          console.log('rides data from func is ', data);
+          $scope.ridesData = data.data;
+        })
+    };
   
 }]);
 
@@ -1057,6 +1071,22 @@ myApp.service('FormService', function($http){
     }).catch(function(error){
       console.log('service, unable to login', error);
     }) 
+  }
+});
+
+
+
+myApp.service('APIService', function($http){
+  this.getContentFromURL = function(url) {
+    return $http.get('getContentFromUrl', {params: {url: url}})
+      .then(function(data){
+        return data;
+      })
+  }
+  this.getAllRides = function(){
+    return $http.get('/getAllRides').then(function(data){
+      return data;
+    })
   }
 });
 
