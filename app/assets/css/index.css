@@ -113,6 +113,7 @@ nav .dropdown-menu li.divider{
   display: inline-block;
   float: none;
   vertical-align: top;
+  margin-bottom: 25px;
 }
 .navbar .navbar-collapse {
   text-align: center;
@@ -1502,7 +1503,7 @@ form textarea.form-control {font-size:25px}
 .places .jumbotron {background:white}
 .places .jumbotron p {margin-top:25px}
 .places ul li {margin-top:15px}
-.wheels #first-hero-wheels {
+#first-hero-wheels {
   background-image: url('../images/dark/walking-crowd.jpg') !important;
   background-attachment: fixed;
   background-position: center center !important;
@@ -1510,7 +1511,7 @@ form textarea.form-control {font-size:25px}
   background-repeat: no-repeat !important;
   height: 400px !important;
 }
-.wheels #first-hero-wheels h1{
+#first-hero-wheels h1{
   color:white !important;
   text-shadow: 2px 2px #529ba8;
   margin-top:170px !important;
