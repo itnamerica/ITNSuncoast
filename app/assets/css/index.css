@@ -593,6 +593,11 @@ nav .dropdown-menu li.divider{
 }
 .corporate .form-area {width:70%}
 
+.corporate [class*=col] img {
+  display:block;
+  margin:auto;
+}
+
 .community {line-height:1.7;}
 .community #first-hero-community {
   background-image: url('../images/itn-people-faded/women-car.png') !important;
