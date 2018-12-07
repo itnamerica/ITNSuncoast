@@ -477,16 +477,13 @@ myApp.controller('MainController', ['$scope', '$transitions','$http', '$anchorSc
       var length = binaryImg.length;
       var arrayBuffer = new ArrayBuffer(length);
       var uintArray = new Uint8Array(arrayBuffer);
-
       for (var i = 0; i < length; i++) {
-      uintArray[i] = binaryImg.charCodeAt(i);
+        uintArray[i] = binaryImg.charCodeAt(i);
       }
       var currentBlob = new Blob([uintArray], {type: 'application/pdf'});
       $scope.pdfUrl = URL.createObjectURL(currentBlob);
-      // $("#output").append($("<a/>").attr({href: $scope.pdfUrl}).append("Download"));
-      // $scope.redirectToURL($scope.pdfUrl);
       console.log('redirecting to pdf', formType, formObj);
-      window.location.href = $scope.pdfUrl;
+      window.open($scope.pdfUrl);
     }
     else {
       return $scope.pdfUrl = "This form does not contain a PDF";
