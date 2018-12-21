@@ -1,12 +1,12 @@
 
     <div class="news">
-      
+
     <div class="jumbotron section first-hero">
       <h1>News</h1>
     </div><!--first-hero-->
-    
+
     <div class="jumbotron section news-content">
-      
+
         <div class="pressroom col-sm-6 row">
           <a href="http://pressroom.itnamerica.org/category/itnsuncoast/">
           <div class="col-sm-6 pressroom-image">
@@ -15,12 +15,15 @@
           </div><!--pressroom-image-->
           </a>
         </div><!--pressroom-->
-      
+
       <div class="newsletter col-sm-6 row">
         <div class="col-sm-6 newsletter-content">
           <div class="newsletter-title"><h3>Newsletters</h3></div>
           <img ng-src="{{assetsPath}}/images/icons/news-noword.png" alt="press icon"/>
           <ul>
+            <li class="wow fadeInUp">
+              <a ng-click="redirectToURL(assetsPath + '/images/docs/newsletters/Newsletter_Dec_2018.pdf')" role="link to newsletter">Newsletter December 2018</a>
+            </li>
             <li class="wow fadeInUp">
               <a ng-click="redirectToURL(assetsPath + '/images/docs/newsletters/Newsletter_Oct_2018.pdf')" role="link to newsletter">Newsletter October 2018</a>
             </li>
@@ -83,14 +86,14 @@
             </li>
           </ul>
         </div><!--newsletter-content-->
-        
+
       </div><!--newsletter-->
-      
-      
+
+
       <div class="row">
-  
+
   <div class="newsletter col-sm-6 row" style="margin-top:-35% !important">
-    
+
     <div class="col-sm-6 newsletter-content special-events">
       <div class="newsletter-title"><h3>Special Events</h3></div>
       <img ng-src="{{assetsPath}}/images/icons/icon-events.png" style="width:263px" alt="press icon"/>
@@ -100,23 +103,23 @@
         <li><a ng-click="redirectToURL(assetsPath + '/images/docs/special-events/ITNSuncoast2017LuncheonProgram.pdf')" role="link to luncheon program pdf">ITN<em>Suncoast</em> 2017 Luncheon Program</a></li>
       </ul>
     </div><!--newsletter-content-->
-    
+
   </div><!--newsletter-->
-  
+
 </div><!--row-->
-      
-      
+
+
     </div><!--news-content-->
-    
-    
+
+
   </div><!--news-->
-  
-  
-  
+
+
+
   <script type="text/javascript">
-  
+
   $(document).ready(function(){
     new WOW().init();
   })
-  
+
   </script>
