@@ -1,5 +1,5 @@
 <div class="homepage" ui-view>
-  
+
 <div class="hp-carousel">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
@@ -15,23 +15,23 @@
   <div class="carousel-inner">
     <div class="item active" style="height:auto !important">
       <a ui-sref="event-page" role="link to Jane Brody Come Ride with Us flyer">
-      <img ng-src="{{assetsPath}}/images/Jane-Brody-Banner.png" alt="banner image for Jane Brody's Come Ride wih Us event" style="height:auto">
+      <img ng-src="{{assetsPath}}/images/Banner.png" alt="banner image for Jane Brody's Come Ride wih Us event" style="height:auto">
     </a>
     </div>
-    
+
     <!-- <div class="item active" style="height:auto !important">
       <a ng-click="redirectToURL(assetsPath + '/images/docs/come_ride_pdf.pdf')" role="link to come ride with us sponsorship opportunities">
       <img ng-src="{{assetsPath}}/images/come-ride-slider2.png" alt="banner image for the Come Ride wih Us sponsorship opportunities" style="height:auto">
     </a>
     </div> -->
-    
+
     <div class="item">
       <img ng-src="{{assetsPath}}/images/dark/frontseat-medium.JPG" alt="man and woman front car seats">
       <h2 class="carousel-statement">
         ITN<em>{{affiliate}}</em> provides rides to seniors and visually challenged people in all of Sarasota and Manatee Counties.
       </h2>
     </div>
-    
+
     <div class="item">
       <img ng-src="{{assetsPath}}/images/dark/medium-res/highres-beach_small.jpeg" id="highres-beach" alt="beach">
       <h2 class="carousel-statement">
@@ -107,13 +107,13 @@
       </div><!--feature description-->
     </div><!--col-md-4-->
   </div><!--features-->
-  
+
   <div class="row post-features">
     <div class="col-md-4 each">Affordable fares <hr align="center" width="35%"></div>
     <div class="col-md-4 each">No tipping <hr align="center" width="35%"></div>
     <div class="col-md-4 each">Cash-free transactions <hr align="center" width="35%"></div>
   </div>
-  
+
 </div><!--JUMBO FEATURES-->
 
 <div class="jumbotron section mission">
@@ -145,7 +145,7 @@
         Riders
       </div>
     </div><!--ROW-->
-    
+
   </div><!--CONTAINER-->
 </div><!-- PROGRESS-->
 
@@ -188,19 +188,19 @@
       </div>
       <div class="modal-body">
         <form novalidate name="itnForm" ng-model="formData" ng-submit="submitForm('newsletter')" role="newsletter form">
-          
+
           <div class="form-group ta-center" ng-class="{ 'has-error' : itnForm.email.$invalid && !itnForm.email.$pristine }">
             <label for="newsletter signup" style="margin-bottom:15px">Your email address: </label><br>
             <input type="text" class="form-control center-block" id="email" name="email" placeholder="Example: test@example.com" ng-model="formData.email" ng-pattern="emailPattern" style="width:70%">
             <span ng-if="itnForm.email.$error.pattern" class="help-block">{{errorMessages.email}}</span>
-          </div> 
-          
+          </div>
+
           <p ng-if="loading"><em>Loading. Please wait</em></p>
           <p style="color:red; margin-top:50px"><strong>{{serverMessage}}</strong></p>
 
           <button type="submit" class="btn btn-lg center-block">Sign me up</button>
         </form>
-    
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -211,18 +211,18 @@
 
 
 <script type="text/javascript">
-  
+
 
   $(document).ready(function() {
     new WOW().init();
-    
+
     $('.carousel').carousel({
       interval: 3500
     })
-    
+
     setTimeout(function(){
         $('#myModal').modal('show');
     }, 5000);
-  
+
   });
 </script>
